@@ -98,3 +98,81 @@ body{
     text-align: center;
     padding: 10px 20px;
 }
+
+/* develop section styling */
+.develop{
+    width: 1000px;
+    margin: 62px auto;
+    border-radius: 16px;
+    background: rgba(13, 19, 33, 0.02);
+}
+.develop-header{
+    margin-bottom: 50px;
+    text-align: center;
+}
+.develop-header, .inspiration .title{
+    color: rgb(13, 19, 33);
+    font-family: Azeret Mono;
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 70px;
+    letter-spacing: 0%;
+    text-align: center; 
+}
+.develop-content{
+    display: flex;
+    gap: 90px;
+    margin: 80px 30px;
+}
+.develop .learn-more{
+    padding: 8px 15px;
+    border: 1px solid rgb(13, 19, 33);
+    text-decoration: none;
+    color: rgb(13, 19, 33);
+    font-family: Azeret Mono;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 23px;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+.develop .develop-img{
+    width: 250px;
+    height: 210px;
+}
+
+.develop .description{
+    margin-bottom: 60px;
+}
+
+.develop-content .title{
+    color: rgba(13, 19, 33, 0.7);
+    font-family: Azeret Mono;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+/* inspiration section styling */
+
+.inspiration{
+    width: 1000px;
+    margin: 62px auto;
+}
+
+.inspiration iframe {
+    width: 95%;
+    max-width: 480px; /* keeps it nicely centered and not too big */
+    display: block;
+    margin: 0 auto;
+    border-radius: 16px;
+}
+.inspiration .inspiration-content{
+    width: 500px;
+    margin: 40px auto;
+    box-sizing: border-box;
+    border: 1px solid rgba(13, 19, 33, 0.2);
+    border-radius: 16px;
+}
