@@ -248,6 +248,7 @@ body{
 
 .target .description{
     margin-bottom: 12px;
+    
 }
 
 /* next target section styling */
@@ -263,13 +264,16 @@ body{
     padding: 20px;
 }
 
+.next-target .description{
+    text-align: center;
+}
 /* support section styling */
 .support{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 200px;
+    height: 250px;
     text-align: center;
     border-radius: 16px;
     background: 
