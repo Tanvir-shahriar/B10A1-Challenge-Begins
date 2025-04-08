@@ -1,0 +1,100 @@
+/* font styling */
+.azeret-mono-<uniquifier> {
+    font-family: "Azeret Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+  }
+
+/* universal styling */
+body{
+    width: 1350px;
+    margin: 0;
+    border: 0;
+
+}
+.description{
+    color: rgb(13, 19, 33);
+    font-family: Azeret Mono;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0%;
+}
+/* nav bar styling */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 100px;    
+}
+
+.navbar span{
+    color: rgb(13, 19, 33);
+    font-family: Azeret Mono;
+    font-size: 25px;
+    font-weight: 800;
+    line-height: 33px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+/* nav bar button */
+.navbar button{
+    box-sizing: border-box;
+    border: 1px solid rgb(13, 19, 33);
+    border-radius: 8px;
+    opacity: 0.8;
+    color: rgb(13, 19, 33);
+    font-family: Azeret Mono;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 23px;
+    letter-spacing: 0%;
+    text-align: center;
+    padding: 10px 20px;
+}
+
+/* hero section styling */
+.hero{
+    background-image: url(assets/Hero-bg.png);
+    width: 1350px;
+    height: 520px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.hero img{
+    width: 170px;
+    height: 210px;
+}
+
+.hero .title{
+    color: rgb(13, 19, 33);
+    font-family: Azeret Mono;
+    font-size: 45px;
+    font-weight: 800;
+    line-height: 68px;
+    letter-spacing: 0%;
+    text-align: center;
+    margin-top: 15px;
+}
+.hero .description{
+    text-align: center;
+    margin-bottom: 15px;
+}
+.hero button{
+    border-radius: 8px;
+    background: rgb(13, 19, 33);
+    color: rgb(255, 255, 255);
+    font-family: Azeret Mono;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 23px;
+    letter-spacing: 0%;
+    text-align: center;
+    padding: 10px 20px;
+}
