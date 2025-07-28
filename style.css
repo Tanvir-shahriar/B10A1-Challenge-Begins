@@ -1,83 +1,77 @@
 /* font styling */
-.azeret-mono-<uniquifier> {
+.azeret-mono- {
     font-family: "Azeret Mono", monospace;
     font-optical-sizing: auto;
-    font-weight: <weight>;
     font-style: normal;
-  }
+}
 
 /* universal styling */
-body{
-    width: 1350px;
-    margin: 0;
+body {
+    max-width: 1440px;
+    margin: 0 auto;
     border: 0;
-
+    font-family: "Azeret Mono", monospace;
 }
-.description{
+
+.description {
     color: rgb(13, 19, 33);
-    font-family: Azeret Mono;
-    font-size: 13px;
+    font-size: 16px;
     font-weight: 400;
     line-height: 26px;
     letter-spacing: 0%;
+    opacity: 0.7;
 }
 
 /* universal styling for titles */
-.develop-header, .inspiration, .target, .next-target .title{
+.section-title {
     color: rgb(13, 19, 33);
-    font-family: Azeret Mono;
-    font-size: 24px;
+    font-family: "Azeret Mono", monospace;
+    font-size: 32px;
     font-weight: 800;
-    line-height: 70px;
-    letter-spacing: 0%;
-    text-align: center; 
+    text-align: center;
 }
 
 /* universal width for sections */
-.target, .next-target, .inspiration, .support{
-    width: 1000px;
-    margin: 62px auto;
-    
+.section-container {
+    width: 90%;
+    max-width: 1140px;
+    margin: 80px auto;
 }
 
 /* nav bar styling */
-.navbar{
+.navbar {
     display: flex;
     justify-content: space-between;
-    margin: 60px 175px;  
+    align-items: center;
+    padding: 20px 5%;
 }
 
-.navbar span{
+.navbar span {
     color: rgb(13, 19, 33);
-    font-family: Azeret Mono;
-    font-size: 25px;
+    font-family: "Azeret Mono", monospace;
+    font-size: 28px;
     font-weight: 800;
-    line-height: 33px;
-    letter-spacing: 0%;
-    text-align: left;
 }
 
 /* nav bar button */
-.navbar button{
+.navbar button {
     box-sizing: border-box;
     border: 1px solid rgb(13, 19, 33);
     border-radius: 8px;
     opacity: 0.8;
     color: rgb(13, 19, 33);
-    font-family: Azeret Mono;
-    font-size: 17px;
+    font-family: "Azeret Mono", monospace;
+    font-size: 20px;
     font-weight: 600;
-    line-height: 23px;
-    letter-spacing: 0%;
-    text-align: center;
-    padding: 10px 20px;
+    padding: 17px 24px;
+    cursor: pointer;
 }
 
 /* hero section styling */
-.hero{
+.hero {
     background-image: url(assets/Hero-bg.png);
-    width: 1350px;
-    height: 520px;
+    width: 100%;
+    min-height: 520px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -85,264 +79,311 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-.hero img{
-    width: 170px;
-    height: 210px;
+    padding: 40px 20px;
+    box-sizing: border-box;
 }
 
-.hero .title{
+.hero img {
+    width: 240px;
+    height: 240px;
+}
+
+.hero .title {
     color: rgb(13, 19, 33);
-    font-family: Azeret Mono;
-    font-size: 45px;
+    font-family: "Azeret Mono", monospace;
+    font-size: 48px;
     font-weight: 800;
     line-height: 68px;
-    letter-spacing: 0%;
     text-align: center;
-    margin-top: 15px;
+    margin-top: 32px;
 }
-.hero .description{
+
+.hero .description {
     text-align: center;
-    margin-bottom: 15px;
+    margin-bottom: 32px;
+    max-width: 800px;
 }
-.hero button{
+
+.hero button {
     border-radius: 8px;
     background: rgb(13, 19, 33);
     color: rgb(255, 255, 255);
-    font-family: Azeret Mono;
-    font-size: 17px;
+    font-family: "Azeret Mono", monospace;
+    font-size: 20px;
     font-weight: 600;
-    line-height: 23px;
-    letter-spacing: 0%;
-    text-align: center;
-    padding: 10px 20px;
+    padding: 21px 24px;
+    border: none;
+    cursor: pointer;
 }
 
 /* develop section styling */
-.develop{
-    width: 1000px;
-    margin: 62px auto;
+.develop {
+    padding: 80px;
     border-radius: 16px;
     background: rgba(13, 19, 33, 0.02);
 }
-.develop-header{
-    margin-bottom: 50px;
+
+.develop-header {
+    margin-bottom: 48px;
     text-align: center;
 }
 
-.develop-content{
+.develop-content {
     display: flex;
-    gap: 90px;
-    margin: 80px 30px;
+    gap: 100px;
+    align-items: center;
+    margin-bottom: 32px;
+    background: #fff;
+    padding: 48px;
+    border-radius: 16px;
 }
-.develop .learn-more{
-    padding: 8px 15px;
+.develop-content:nth-child(3){
+    flex-direction: row-reverse;
+}
+
+.develop-content .text-content {
+    flex-basis: 50%;
+}
+
+.develop-content .image-content {
+    flex-basis: 50%;
+}
+
+.develop .learn-more {
+    padding: 12px 20px;
     border: 1px solid rgb(13, 19, 33);
     text-decoration: none;
     color: rgb(13, 19, 33);
-    font-family: Azeret Mono;
+    font-family: "Azeret Mono", monospace;
     font-size: 17px;
     font-weight: 600;
-    line-height: 23px;
-    letter-spacing: 0%;
+}
+
+.develop .develop-img {
+    width: 100%;
+}
+
+.develop .description {
+    margin-bottom: 32px;
+}
+
+.develop-content .title {
+    color: rgba(13, 19, 33, 0.7);
+    font-family: "Azeret Mono", monospace;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+    text-align: left;
+}
+
+/* inspiration section styling */
+.inspiration {
     text-align: center;
 }
 
-.develop .develop-img{
-    width: 250px;
-    height: 210px;
-}
-
-.develop .description{
-    margin-bottom: 60px;
-}
-
-.develop-content .title{
-    color: rgba(13, 19, 33, 0.7);
-    font-family: Azeret Mono;
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 36px;
-    letter-spacing: 0%;
-    text-align: left;
-}
-/* inspiration section styling */
-
 .inspiration iframe {
-    width: 95%;
-    max-width: 480px; /* keeps it nicely centered and not too big */
+    width: 100%;
+    height: 550px;
     display: block;
     margin: 0 auto;
     border-radius: 16px;
+    border: none;
 }
-.inspiration .inspiration-content{
-    width: 500px;
-    margin: 40px auto;
+
+.inspiration .inspiration-content {
+    margin-top: 48px;
     box-sizing: border-box;
     border: 1px solid rgba(13, 19, 33, 0.2);
     border-radius: 16px;
+    padding: 32px;
 }
 
 /* target section styling */
-
-.target .target-content{
-    display: flex;
-    gap: 20px;
-    margin: 80px 30px;
-}
-
-.target .target-content .sub-title{
-    color: rgb(13, 19, 33);
-    font-family: Azeret Mono;
-    font-size: 17px;
-    font-weight: 800;
-    line-height: 36px;
-    letter-spacing: 0%;
+.target {
     text-align: center;
 }
-
-.target .target-content .learn-more{
-    color: rgb(13, 19, 33);
-    font-family: Azeret Mono;
-    font-size: 13px;
-    font-weight: 700;
-    line-height: 19px;
-    letter-spacing: 0%;
+.target .target-content {
+    display: flex;
+    gap: 24px;
+    margin-top: 48px;
+}
+.target-card {
+    padding: 40px;
     text-align: left;
-    text-decoration-line: none;
+    flex: 1;
 }
 
-/* separate background color for each divs */
-.target .target-content .target-card1{
+.target .target-content .sub-title {
+    color: rgb(13, 19, 33);
+    font-family: "Azeret Mono", monospace;
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 36px;
+}
+
+.target .target-content .learn-more {
+    color: rgb(13, 19, 33);
+    font-family: "Azeret Mono", monospace;
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.target .target-content .target-card1 {
     border-radius: 16px;
     background: rgba(255, 76, 30, 0.05);
 }
-.target .target-content .target-card2{
+
+.target .target-content .target-card2 {
     border-radius: 16px;
     background: rgba(0, 76, 232, 0.05);
 }
-.target .target-content .target-card3{
+
+.target .target-content .target-card3 {
     border-radius: 16px;
     background: rgba(255, 223, 0, 0.05);
 }
 
-.target-content > div {
-    flex: 1 1 30%;
-    background: white;
-    border-radius: 16px;
-    padding: 20px;
-    text-align: center;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-    transition: transform 0.3s ease;
-}
-
-.target-content > div:hover {
-    transform: translateY(-5px);
-}
-
 .target-content img {
-    width: 60px;
-    height: 60px;
-    margin-bottom: 15px;
-}
-
-.target .description{
-    margin-bottom: 12px;
-    
+    width: 56px;
+    height: 56px;
 }
 
 /* next target section styling */
-
-.next-target > div{
+.next-target{
+    text-align: center;
+}
+.next-target-item {
     display: flex;
-    gap: 25px;
-    margin: 45px 0;
+    gap: 24px;
+    margin-top: 24px;
     box-sizing: border-box;
     border: 1px solid rgba(13, 19, 33, 0.15);
     border-radius: 16px;
     background: rgb(255, 255, 255);
-    padding: 20px;
+    padding: 40px;
+    align-items: center;
+}
+.next-target-item .text-content{
+    text-align: left;
+}
+.next-target .sub-title {
+    font-size: 24px;
+    font-weight: 800;
+}
+.next-target .learn-more{
+    color: rgb(13, 19, 33);
+    font-weight: 700;
+    text-decoration: underline;
 }
 
-.next-target .description{
-    text-align: center;
-}
 /* support section styling */
-.support{
+.support {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 250px;
+    padding: 64px 48px;
     text-align: center;
     border-radius: 16px;
-    background: 
-    linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)),
-    url('assets/handshake.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('assets/handshake.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-
 }
 
-.support .title{
+.support .title {
     color: rgb(255, 255, 255);
-    font-family: Azeret Mono;
-    font-size: 25px;
+    font-family: "Azeret Mono", monospace;
+    font-size: 32px;
     font-weight: 700;
     line-height: 36px;
-    letter-spacing: 0%;
-    text-align: center;
 }
 
-.support .description{
+.support .description {
     color: rgb(255, 255, 255);
-    margin-bottom: 20px;
+    margin-bottom: 24px;
+    opacity: 1;
 }
 
-.support input[type="text"]{
-    width: 460px;
+.support form{
+    display: flex;
+    gap: 16px;
+    width: 100%;
+    justify-content: center;
+}
+
+.support input[type="text"] {
+    width: 100%;
+    max-width: 548px;
     box-sizing: border-box;
     border: 1px solid rgba(13, 19, 33, 0.15);
     border-radius: 8px;
     background: rgb(255, 255, 255);
-    padding: 14px 20px;
-
+    padding: 19px 20px;
+    font-size: 16px;
 }
 
-.support button{
+.support button {
     border: none;
     border-radius: 8px;
     background: rgb(255, 255, 255);
-    padding: 12.5px 20px;
+    padding: 17px 20px;
     color: rgb(13, 19, 33);
-    font-family: Azeret Mono;
-    font-size: 17px;
+    font-family: "Azeret Mono", monospace;
+    font-size: 20px;
     font-weight: 600;
     text-align: center;
-    position: relative;
-    top: 1.5px;
+    cursor: pointer;
 }
 
-.support input[type="text"]:focus{
+.support input[type="text"]:focus {
     outline: none;
 }
 
 /* footer section styling */
-.footer{
+.footer {
     display: flex;
     justify-content: space-between;
-    margin: 60px 175px;
+    align-items: center;
+    padding: 32px 0;
     color: rgb(13, 19, 33);
-    font-family: Azeret Mono;
-    font-size: 14px;
+    font-family: "Azeret Mono", monospace;
+    font-size: 16px;
     font-weight: 600;
-    line-height: 23px;
-    letter-spacing: 0%;
-    text-align: center;
 }
 
-.footer > div{
+.footer .social-icons {
     display: flex;
-    gap: 15px;  
+    gap: 24px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .navbar, .develop-content, .target .target-content, .next-target-item, .footer, .support form {
+        flex-direction: column;
+        text-align: center;
+    }
+    .develop-content:nth-child(3){
+        flex-direction: column;
+    }
+    .develop-content .title, .develop-content .text-content, .next-target-item .text-content{
+        text-align: center;
+    }
+    .navbar, .develop-content, .target .target-content, .next-target-item, .footer, .support form{
+        gap: 20px;
+    }
+    .hero .title {
+        font-size: 32px;
+        line-height: 1.4;
+    }
+    .develop{
+        padding: 20px;
+    }
+    .develop-content{
+        padding: 20px;
+    }
+    .inspiration iframe {
+        height: 300px;
+    }
 }
